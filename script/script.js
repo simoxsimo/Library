@@ -20,6 +20,7 @@ function addBookToLibrary(book) {
 function render() {
     const book = myLibrary[myLibrary.length - 1];
     let article = document.createElement('article');
+    let remove = document.createElement('button')
     let newBook = {
       author:  document.createElement('H4'),
       title: document.createElement('H5'),
@@ -32,8 +33,23 @@ function render() {
         newBook[props].appendChild(document.createTextNode(`${props}: ${book[props]}`));
         article.appendChild(newBook[props]);
     }
+    remove.appendChild(document.createTextNode("Delete Book"));
+    remove.setAttribute('id', 'deleteInfo');
+    article.appendChild(remove);
     // putting article inside section
     section.appendChild(article);
+
+    // deleting articles
+    document.querySelectorAll("#deleteInfo").forEach(i=>i.addEventListener('click', ()=>{
+      removeBook(i.getAttribute('id'));
+    } )
+    )
+    
+}
+
+function removeBook(index) {
+  myLibrary.splice(index,1);
+  render();  
 }
 
 function addBook(event) {
