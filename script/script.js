@@ -21,4 +21,10 @@ function render() {
     } )
 }
 
+const newBook = document.querySelector('#newBook')
+newBook.addEventListener('click', ()=> {
+  let visible = document.querySelector('.bookForm')
+  visible.style.display = 'block';
+})
+
 render();
