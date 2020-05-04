@@ -148,8 +148,12 @@ main {
 section {
   background-color: whitesmoke;
   margin: 15px auto;
-  padding: 15px;
   width: 50%;
+}
+
+article {
+  margin: 20px auto;
+  padding: 15px;
 }
 
 article > h4,h5,p {
