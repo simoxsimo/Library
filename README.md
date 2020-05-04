@@ -59,7 +59,8 @@
 
 This project is a simple library project that was done in an effort to learn about incoroporating javascript with HTML and CSS.
 
-[![Product Name Screen Shot][product-screenshot]](#)
+#### Screenshot
+![Screenshot](https://i.imgur.com/xeD8jXn.png)
 
 This is the first Microverse project of the Javascript Curriculum
 
