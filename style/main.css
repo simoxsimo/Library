@@ -107,6 +107,10 @@ section {
 
 body {
   line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 ol,
@@ -149,11 +153,14 @@ section {
   background-color: whitesmoke;
   margin: 15px auto;
   width: 50%;
+  border-radius: 5px;
 }
 
 article {
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 15px;
+  border: 3px solid #47515A;
+  border-radius: 5px;
 }
 
 article > h4,h5,p {
@@ -165,6 +172,9 @@ button, .submit-form {
   margin: 0 10px;
   padding: 5px 12px;
   border-radius: 3px;
+  border-radius: 5px;
+  height: 35px;
+  color: white;
 }
 
 button:hover, .submit-form:hover {
@@ -179,12 +189,15 @@ button:hover, .submit-form:hover {
 
 form {
   display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: whitesmoke;
   margin: 40px auto;
   padding: 20px;
   width: 50%;
   text-align: justify;
-  border-radius: 3px;
+  border-radius: 5px;
   -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
   -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
   box-shadow:0 0 20px rgba(0,0,0,0.8);
@@ -206,3 +219,36 @@ input {
   margin-top: 10px;
   text-align: center;
 }
+
+.read-status,
+.open-form {
+  background-color: #85BC5E;
+}
+
+.remove-book {
+  background-color: #E35A5A;
+}
+
+.close-form {
+  background-color: #DCBF22;
+}
+
+.submit-form {
+  background-color: #4278A1;
+}
+
+.form-line {
+  width: 260px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .remove-book, */
+/* .open-form, */
+/* .close-form, */
+/* .submit-from { */
+  /* border-radius: 5px; */
+  /* height: 35px; */
+/* } */

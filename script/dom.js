@@ -115,7 +115,7 @@ function addBook(event) {
 // open form when 'New Book' clicked
 openForm.addEventListener('click', (e) => {
   e.preventDefault();
-  form.style.display = 'block';
+  form.style.display = 'flex';
 });
 // close form when 'close' clicked
 closeForm.addEventListener('click', close);
