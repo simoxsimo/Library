@@ -1,3 +1,6 @@
+// since http-server can't read js file without including .js
+import Book from './class.js'; // eslint-disable-line import/extensions
+
 const myLibrary = [];
 const openForm = document.querySelector('.open-form');
 const closeForm = document.querySelector('.close-form');
@@ -14,7 +17,7 @@ function addBookToLibrary(book) {
 function reload() {
   section.innerHTML = '';
 }
-
+/* eslint no-use-before-define: ["error", { "functions": false }] */
 function render() {
   myLibrary.forEach(book => {
     const article = document.createElement('article');
@@ -86,7 +89,7 @@ function close(event) {
 
 function clearCloseForm() {
   form.reset(); // empty form fields after submit
-  close(event);
+  close(event); // eslint-disable-line no-restricted-globals
 }
 
 function addBook(event) {

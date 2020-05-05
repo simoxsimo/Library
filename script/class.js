@@ -1,5 +1,5 @@
 // Book constructor
-function Book(author, title, pages, read) {
+export default function Book(author, title, pages, read) {
   this.author = author;
   this.title = title;
   this.pages = pages;
@@ -7,10 +7,10 @@ function Book(author, title, pages, read) {
 }
 
 // Toggle read status
-Book.prototype.changeReadStatus = () => {
-  if (this.read === 'yes') {
+Book.prototype.changeReadStatus = function () {
+  if (this.read === 'Yes') {
     this.read = 'No';
   } else {
-    this.read = 'yes';
+    this.read = 'Yes';
   }
 };

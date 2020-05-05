@@ -111,6 +111,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: white;
+}
+
+h1 {
+  color: white;
 }
 
 ol,
@@ -133,8 +138,8 @@ q::after {
 
 body {
   background: linear-gradient( /* somewhat transparent film on top of the BG to make it look darker. */
-                rgba(245, 243, 243, 0.7),
-                rgba(248, 246, 246, 0.7)
+                rgba(54, 54, 54, 0.322),
+                rgba(42, 42, 42, 0.315)
                 ), url("./images/library.jpeg") no-repeat center center fixed; /* only display once, center horizontal and vertical, dont let scroll change position. */
   -webkit-background-size: cover;
   -moz-background-size: cover; /* cover the whole html element. */
@@ -150,7 +155,7 @@ main {
 }
 
 section {
-  background-color: whitesmoke;
+  background-color: rgba(32, 32, 32, 0.692);
   margin: 15px auto;
   width: 50%;
   border-radius: 5px;
@@ -159,7 +164,7 @@ section {
 article {
   margin: 0 auto;
   padding: 15px;
-  border: 3px solid #47515A;
+  border: 40px solid rgba(44, 44, 44, 0.109);
   border-radius: 5px;
 }
 
@@ -175,6 +180,7 @@ button, .submit-form {
   border-radius: 5px;
   height: 35px;
   color: white;
+  border: none;
 }
 
 button:hover, .submit-form:hover {
@@ -192,7 +198,8 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: whitesmoke;
+  background-color: rgba(73, 73, 73, 0.253);
+  border: 5px solid rgba(0, 0, 0, 0.424);
   margin: 40px auto;
   padding: 20px;
   width: 50%;
@@ -210,6 +217,9 @@ form {
 label {
   margin: 10px 20px 10px 15px;
   padding-bottom: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 20px;
 }
 input {
   margin-bottom: 20px;
@@ -245,10 +255,28 @@ input {
   align-items: center;
 }
 
-/* .remove-book, */
-/* .open-form, */
-/* .close-form, */
-/* .submit-from { */
-  /* border-radius: 5px; */
-  /* height: 35px; */
-/* } */
+.fields {
+  background-color: rgba(34, 34, 34, 0.5);
+  height: 20px;
+  border: 1px solid rgba(255, 250, 250, 0.404);
+  border-radius: 5px;
+}
+
+h4,
+h5,
+p {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
+  font-style: italic;
+}
+p {
+  font-size: 13px;
+  font-weight: 600;
+}
