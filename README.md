@@ -62,8 +62,6 @@ This project is a simple library project that was done in an effort to learn abo
 #### Screenshot
 ![Screenshot](https://i.imgur.com/4DnrZeT.png)
 
-This is the first Microverse project of the Javascript Curriculum
-
 ### Installation
 
 To get a local copy up and running follow these simple example steps.
@@ -89,10 +87,6 @@ To get a local copy up and running follow these simple example steps.
 This project was built using these technologies.
 * HTML5 and CSS3
 * Javascript
-* Windows
-* Ubuntu 18.4+
-* Eslint
-* VsCode
 
 <!-- CONTACT -->
 ## Authors
