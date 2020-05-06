@@ -275,6 +275,12 @@ input {
   box-shadow: 0 0 7px rgb(255, 255, 255);
 }
 
+.fields::placeholder {
+  color: rgb(235, 101, 101);
+  font-size: 14px;
+  font-style: italic;
+}
+
 h4,
 h5,
 p {

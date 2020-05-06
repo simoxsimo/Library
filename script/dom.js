@@ -89,13 +89,30 @@ function close(event) {
 
 function clearCloseForm() {
   form.reset(); // empty form fields after submit
-  close(event); // eslint-disable-line no-restricted-globals
+  // close(event); // eslint-disable-line no-restricted-globals
+}
+
+// Showing a validation alert as a placeholder
+function placeholderAlert(params, cond1, cond2, cond3) {
+  params.forEach(field => {
+    if (cond1 && field.name === 'author') {
+      field.placeholder = 'Please fill the Author name';
+    } else if (cond2 && field.name === 'title') {
+      field.placeholder = 'Please fill the Title of the book';
+    } else if (cond3 && field.name === 'pages') {
+      field.placeholder = 'Please fill the number of pages';
+    } else {
+      field.placeholder = '';
+    }
+  });
 }
 
 function validation(book) {
   const condition1 = /{\s+}/.test(book.author) || book.author === '';
   const condition2 = /{\s+}/.test(book.title) || book.title === '';
   const condition3 = Object.is(book.pages, NaN);
+  // showing alert
+  placeholderAlert(params, condition1, condition2, condition3);
   if (!(condition1 || condition2 || condition3)) {
     // pushing book to mylibrary
     addBookToLibrary(book);
