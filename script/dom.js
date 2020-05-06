@@ -92,6 +92,16 @@ function clearCloseForm() {
   close(event); // eslint-disable-line no-restricted-globals
 }
 
+function validation(book) {
+  const condition1 = /{\s+}/.test(book.author) || book.author === '';
+  const condition2 = /{\s+}/.test(book.title) || book.title === '';
+  const condition3 = Object.is(book.pages, NaN);
+  if (!(condition1 || condition2 || condition3)) {
+    // pushing book to mylibrary
+    addBookToLibrary(book);
+  }
+}
+
 function addBook(event) {
   let _; // undefined
   const newBook = new Book(_, _, _, 'No');
@@ -105,8 +115,8 @@ function addBook(event) {
       newBook[input.name] = 'Yes';
     }
   });
-  // pushing newBook to mylibrary
-  addBookToLibrary(newBook);
+  // Validating form fields
+  validation(newBook);
   // reload section tag and render again(re-render)
   reload();
   render();
