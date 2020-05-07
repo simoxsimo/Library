@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Library</title>
+</head>
+<body>
+    <main>
+    <h1>My Library</h1>
+    <section></section>
+    <div>
+        <button class="open-form">New Book</button>
+        <form action="" class="book-form">
+            <div class="form-line">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" class="params fields" required>
+            </div>
+            <div class="form-line">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" class="params fields" required>
+            </div>
+            <div class="form-line">
+                <label for="pages">pages</label>
+                <input type="number" name="pages" id="pages" class="params fields" required>
+            </div>
+            <div class="form-line">
+                <label for="read">read?</label>
+                <input type="radio" name="read" id="read-1" class="params">
+                <label for="read">Yes</label>
+                <input type="radio" name="read" id="read-2">
+                <label for="read">No</label>
+            </div>
+            <div class="bttn">
+                <input type="submit" value="Create" class="submit-form">
+                <button class="close-form">Close</button>
+            </div>
+        </form>
+    </div>
+    <script type="module" src="/script/class.js"></script>
+    <script type="module" src="/script/dom.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+body {
+  background: linear-gradient( /* somewhat transparent film on top of the BG to make it look darker. */
+                rgba(54, 54, 54, 0.322),
+                rgba(42, 42, 42, 0.315)
+                ), url("./images/library.jpeg") no-repeat center center fixed; /* only display once, center horizontal and vertical, dont let scroll change position. */
+  -webkit-background-size: cover;
+  -moz-background-size: cover; /* cover the whole html element. */
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  margin: 50px auto;
+  width: 50%;
+}
+
+section {
+  background-color: rgba(32, 32, 32, 0.692);
+  margin: 15px auto;
+  width: 50%;
+  border-radius: 5px;
+}
+
+article {
+  margin: 0 auto;
+  padding: 15px;
+  border: 40px solid rgba(44, 44, 44, 0.109);
+  border-radius: 5px;
+}
+
+article > h4,h5,p {
+  text-align: justify;
+  line-height: 1.7em;
+}
+
+button, .submit-form {
+  margin: 0 10px;
+  padding: 5px 12px;
+  border-radius: 3px;
+  border-radius: 5px;
+  height: 35px;
+  color: white;
+  border: none;
+}
+
+button:hover, .submit-form:hover {
+  -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  top:0;
+  bottom:0;
+  left:10px;
+  right:10px;
+}
+
+button:focus, .submit-form:focus {
+  outline: none !important;
+  border:1px solid rgb(255, 255, 255);
+  box-shadow: 0 0 7px rgb(255, 255, 255);
+}
+
+form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(73, 73, 73, 0.253);
+  border: 5px solid rgba(0, 0, 0, 0.424);
+  margin: 40px auto;
+  padding: 20px;
+  width: 50%;
+  text-align: justify;
+  border-radius: 5px;
+  -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  top:0;
+  bottom:0;
+  left:10px;
+  right:10px;
+}
+
+label {
+  margin: 10px 20px 10px 15px;
+  padding-bottom: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 20px;
+}
+input {
+  margin-bottom: 20px;
+}
+
+.bttn {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.read-status,
+.open-form {
+  background-color: #85BC5E;
+}
+
+.remove-book {
+  background-color: #E35A5A;
+}
+
+.close-form {
+  background-color: #DCBF22;
+}
+
+.submit-form {
+  background-color: #4278A1;
+}
+
+.form-line {
+  width: 260px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fields {
+  background-color: rgba(34, 34, 34, 0.5);
+  height: 20px;
+  border: 1px solid rgba(255, 250, 250, 0.404);
+  border-radius: 5px;
+  color: rgb(255, 255, 255)
+}
+
+.fields:focus {
+  outline: none !important;
+  border:1px solid rgb(255, 255, 255);
+  box-shadow: 0 0 7px rgb(255, 255, 255);
+}
+
+.fields::placeholder {
+  color: rgb(235, 101, 101);
+  font-size: 14px;
+  font-style: italic;
+}
+
+h4,
+h5,
+p {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
+  font-style: italic;
+}
+p {
+  font-size: 13px;
+  font-weight: 600;
+}
